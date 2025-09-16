@@ -14,8 +14,8 @@
 <body>
     <div id="page-wrapper">
         <header>
-            <h1> Alex's Online Resume </h1>
-            <p> An online display of Alex's accomplishments </p>
+            <h1> Alex Olson's Online Resume </h1>
+            <p> An online display of Alex's information and achievements. </p>
         </header>
         <!-- special nav div for styling/organization -->
         <div id ="nav-main">
@@ -24,39 +24,41 @@
                     <li> <a href="index.html"> Home </a> </li>
                     <li> <a href="education.html"> Education </a> </li>
                     <li> <a href="experience.html"> Experience </a> </li>
-                    <li> <a href="certs.html"> Certifications </a> </li>
+                    <li> <a href="certs.html"> Certs </a> </li>
                     <li> <a href="projects.html"> Projects </a> </li>
                     <li> <a href="hobbies.html"> Hobbies </a> </li>
                 </ul>
             </nav>
             <main>
-                <h1> Projects </h1>
-                <!-- start of JS calculator project -->
-                <h3 id="calc"> Simple JS Calculator </h3>
-                <!-- creating seperate sections for input boxes -->
-                <div id="calc_s">
-                    <label for="one"> Enter your first number: </label> <input id="one">
-                    <label for="two"> Enter your second number: </label> <input id="two">
+                <div id="spacer">
+                    <h1> Projects </h1>
+                    <!-- start of JS calculator project -->
+                    <h3 id="calc"> Simple JS Calculator </h3>
+                    <!-- creating seperate sections for input boxes -->
+                    <div id="calc_s">
+                        <label for="one"> Enter your first number: </label> <input id="one">
+                        <label for="two"> Enter your second number: </label> <input id="two">
+                    </div>
+                    <!-- creating another seperate section for the buttons -->
+                    <div id="calc_b">
+                        <button onclick=doAdd()> + </button>
+                        <button onclick=doSub()> - </button>
+                        <button onclick=doMult()> * </button>
+                        <button onclick=doDiv()> / </button>
+                        <button onclick=doPower()> ** </button>
+                        <button onclick=doClear()> CL </button>
+                    </div>
+                    <!-- for displaying the result of the calculation -->
+                    <h2 id="output"></h2>
+                    <!-- other relevant project listed below as other pages -->
+                    <h3> ExoCollect - Gamified Space Discovery Web Platform </h3>
+                    <p id="desc"> Aug 2025 - Present </p>
+                    <ul>
+                        <li>
+                            ExoCollect is a full-stack Django web platform with a goal to reignite interest in space through a gamified learning experience. Users can “discover” uniquely generated virtual planets with attributes inspired by real life astronomical frequencies, build personal archives, and compare discoveries with others.
+                        </li>
+                    </ul>
                 </div>
-                <!-- creating another seperate section for the buttons -->
-                <div id="calc_b">
-                    <button onclick=doAdd()> + </button>
-                    <button onclick=doSub()> - </button>
-                    <button onclick=doMult()> * </button>
-                    <button onclick=doDiv()> / </button>
-                    <button onclick=doPower()> ** </button>
-                    <button onclick=doClear()> CL </button>
-                </div>
-                <!-- for displaying the result of the calculation -->
-                <h2 id="output"></h2>
-                <!-- other relevant project listed below as other pages -->
-                <h3> ExoCollect - Gamified Space Discovery Web Platform </h3>
-                <p id="desc"> Aug 2025 - Present </p>
-                <ul>
-                    <li>
-                        ExoCollect is a full-stack Django web platform with a goal to reignite interest in space through a gamified learning experience. Users can “discover” uniquely generated virtual planets with attributes inspired by real life astronomical frequencies, build personal archives, and compare discoveries with others.
-                    </li>
-                </ul>
             </main>
         </div>
         <footer>

@@ -7,6 +7,25 @@
     box-sizing: border-box;
 }
 
+/* home page image and summary styling (and padding) */
+#home_p {
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    /* looked up this particular property; which aligns items to the center (forgot if covered or not) */
+    align-items: center;
+}
+
+/* adding space below the image on the home page */
+#me {
+    padding-bottom: 5%;
+}
+
+/* this spacer divider im using to add padding to the content within each nav */
+#spacer {
+    padding: 3%;
+}
+
 /* picked a different font following the style shown in lecture */
 h1 {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -200,6 +219,20 @@ label {
     header, footer {
         text-align: center;
     }
+
+    /* recualting font sizes for the smaller screen */
+    p {
+        font-size: calc(5px + 2vw);
+    }
+
+    h3 {
+        font-size: calc(4px + 2vw);
+    }
+
+    main li {
+        font-size: calc(4px + 2vw);
+    }
+
 }
 
 
